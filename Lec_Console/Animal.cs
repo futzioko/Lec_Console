@@ -6,16 +6,9 @@
         {
         }
         public string name = "-Без клички-";
-        
-        public virtual void Eat()
-        {
-            System.Console.WriteLine($"\tЖивотное {name} кушает"); 
-        }
 
-        public virtual void Move()
-        {
-            System.Console.WriteLine("\tЖивотное перемещается");
-        }
+        public abstract void Eat();
+        public abstract void Move();
 
     }
 
@@ -47,6 +40,20 @@
         {
             System.Console.WriteLine($"\t{name} перемещается на 4-х лапах,\n" +
                                      $"\t\t но будь осторожен, он снесет все на своем пути");
+        }
+    }
+
+    class Bear : Animal
+    {
+        public Bear(string name) { this.name = name; }
+        public override void Eat()
+        {
+            System.Console.WriteLine($"Мишка {name} кушает ягодки");
+        }
+
+        public override void Move()
+        {
+            System.Console.WriteLine("Мишка идет на задних лапках");
         }
     }
 
