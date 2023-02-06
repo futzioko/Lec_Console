@@ -44,9 +44,11 @@ namespace Lec_Console
                                     dogA, dogB, dogC,
                                     bearA, bearB, bearC};
 
-            foreach(Animal i in arrAnimal)
-            {
+            Console.WriteLine("\n");
 
+            foreach (Animal i in arrAnimal)
+            {
+                i.Info();
             }
 
             Console.ReadKey();

@@ -1,13 +1,21 @@
 ﻿namespace Lec_Console
 {
-    abstract class Animal
+
+    interface IInfo
+    {
+        void Info();
+    }
+    abstract class Animal: IInfo
     {
         public Animal()
         {
         }
         public string name = "-Без клички-";
         public string kind;
-
+        public virtual void Info()
+        {
+            System.Console.WriteLine($"\tВид: {kind}\t Кличка: {name}");
+        }
         public abstract void Eat();
         public abstract void Move();
 
@@ -27,6 +35,11 @@
         {
             System.Console.WriteLine("\tКошка аккуратно перемещается на 4-х лапах");
         }
+
+        public override void Info()
+        {
+            System.Console.WriteLine($"\t{kind} {name} на вид безобидная, иногда так и есть") ;
+        }
     }
 
 
@@ -45,6 +58,11 @@
             System.Console.WriteLine($"\t{name} перемещается на 4-х лапах,\n" +
                                      $"\t\t но будь осторожен, он снесет все на своем пути");
         }
+
+        public override void Info()
+        {
+            System.Console.WriteLine($"\t{kind} {name} добрый и верный");
+        }
     }
 
     class Bear : Animal
@@ -59,6 +77,11 @@
         public override void Move()
         {
             System.Console.WriteLine("Мишка идет на задних лапках");
+        }
+
+        public override void Info()
+        {
+            System.Console.WriteLine($"\t{kind} {name} может быть опасен, обходите его стороной");
         }
     }
 
