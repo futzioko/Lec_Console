@@ -30,8 +30,7 @@ namespace Lec_Console
 
             Animal cat1 = new Cat("Зюзя");
             Animal dog1 = new Dog("Гав");
-            Animal catMini = new MiniCat("uf");
-            catMini.Eat();
+
             cat1.Eat();
             cat1.Move();
             dog1.Eat();
