@@ -2,14 +2,14 @@
 {
     class Animal
     {
-        public string name;
+        public string name = "-Без клички-";
         
-        public void Eat()
+        public virtual void Eat()
         {
-            System.Console.WriteLine("\tЖивотное кушает");
+            System.Console.WriteLine($"\tЖивотное {name} кушает"); 
         }
 
-        public void Move()
+        public virtual void Move()
         {
             System.Console.WriteLine("\tЖивотное перемещается");
         }
@@ -26,7 +26,28 @@
 
         public void Move()
         {
-            System.Console.WriteLine("\tКошка перемещается на 4-х лапах");
+            System.Console.WriteLine("\tКошка аккуратно перемещается на 4-х лапах");
+        }
+    }
+
+  /*   class MiniCat: Cat
+    {
+
+    } */
+
+    class Dog: Animal
+    {
+        public Dog(string name) { this.name = name; }
+
+        public void Eat()
+        {
+            System.Console.WriteLine($"\tВерный пёс {name} сейчас съест ... \n \t\t\t ...Мусю");
+        }
+
+        public void Move()
+        {
+            System.Console.WriteLine($"\t{name} перемещается на 4-х лапах,\n" +
+                                     $"\t\t но будь осторожен, он снесет все на своем пути");
         }
     }
 

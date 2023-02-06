@@ -11,7 +11,6 @@ namespace Lec_Console
         static void Main(string[] args)
         {
             Animal animal = new Animal();
-
             animal.Eat();
             animal.Move();
             
@@ -20,6 +19,22 @@ namespace Lec_Console
             Cat cat = new Cat("Муся");
             cat.Eat();
             cat.Move();
+
+            Console.WriteLine("\n");
+
+            Dog dog = new Dog("Шарик");
+            dog.Eat();
+            dog.Move();
+
+            Console.WriteLine("\n");
+
+            Animal cat1 = new Cat("Зюзя");
+            Animal dog1 = new Dog("Гав");
+            cat1.Eat();
+            cat1.Move();
+            dog1.Eat();
+            dog1.Move();
+
 
             Console.ReadKey();
         }
