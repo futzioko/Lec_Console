@@ -40,16 +40,18 @@ namespace Lec_Console
             Dog dogA = new Dog("Гав"), dogB = new Dog("Тяф"), dogC = new Dog("Ау");
             Bear bearA = new Bear("Ми"), bearB = new Bear("шк"), bearC = new Bear("Фредо");
 
-            Animal[] arrAnimal = { catA, catB, catC,
+            IInfo[] arrAnimal = { catA, catB, catC,
                                     dogA, dogB, dogC,
                                     bearA, bearB, bearC};
 
             Console.WriteLine("\n");
 
-            foreach (Animal i in arrAnimal)
+            foreach (IInfo i in arrAnimal)
             {
                 i.Info();
             }
+
+            IInfo inf = new Cat("Интерфейс");
 
             Console.ReadKey();
         }
