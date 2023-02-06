@@ -10,9 +10,9 @@ namespace Lec_Console
     {
         static void Main(string[] args)
         {
-            Animal animal = new Animal();
+           /* Animal animal = new Animal();
             animal.Eat();
-            animal.Move();
+            animal.Move(); */
             
             Console.WriteLine("\n");
 
@@ -30,10 +30,13 @@ namespace Lec_Console
 
             Animal cat1 = new Cat("Зюзя");
             Animal dog1 = new Dog("Гав");
+            Animal catMini = new MiniCat("uf");
+            catMini.Eat();
             cat1.Eat();
             cat1.Move();
             dog1.Eat();
             dog1.Move();
+
 
 
             Console.ReadKey();
