@@ -6,6 +6,7 @@
         {
         }
         public string name = "-Без клички-";
+        public string kind;
 
         public abstract void Eat();
         public abstract void Move();
@@ -14,7 +15,9 @@
 
     class Cat: Animal
     {
-        public Cat(string name) { this.name = name; }
+        public Cat(string name) { this.name = name;
+                                  kind = "Кошка";
+        }
         public override void Eat()
         {
             System.Console.WriteLine($"\tКошка {name} кушает Whiskas 15 лет и не жалуется");
@@ -29,7 +32,8 @@
 
     class Dog: Animal
     {
-        public Dog(string name) { this.name = name; }
+        public Dog(string name) { this.name = name; 
+                                  kind = "Собака"; }
 
         public override void Eat()
         {
@@ -45,7 +49,8 @@
 
     class Bear : Animal
     {
-        public Bear(string name) { this.name = name; }
+        public Bear(string name) { this.name = name; 
+                                   kind = "Медведь"; }
         public override void Eat()
         {
             System.Console.WriteLine($"Мишка {name} кушает ягодки");

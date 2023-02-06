@@ -36,7 +36,18 @@ namespace Lec_Console
             dog1.Eat();
             dog1.Move();
 
+            Cat catA = new Cat("Первый"), catB = new Cat("Второй"), catC = new Cat("Третий");
+            Dog dogA = new Dog("Гав"), dogB = new Dog("Тяф"), dogC = new Dog("Ау");
+            Bear bearA = new Bear("Ми"), bearB = new Bear("шк"), bearC = new Bear("Фредо");
 
+            Animal[] arrAnimal = { catA, catB, catC,
+                                    dogA, dogB, dogC,
+                                    bearA, bearB, bearC};
+
+            foreach(Animal i in arrAnimal)
+            {
+
+            }
 
             Console.ReadKey();
         }
