@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec_Console", "Lec_Console\Lec_Console.csproj", "{F61048E7-1756-4DEE-87AE-2CAE0D40AEF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F61048E7-1756-4DEE-87AE-2CAE0D40AEF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F61048E7-1756-4DEE-87AE-2CAE0D40AEF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F61048E7-1756-4DEE-87AE-2CAE0D40AEF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F61048E7-1756-4DEE-87AE-2CAE0D40AEF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0CFCC7F-E6D4-44FA-A2DB-FAED492C662A}
+	EndGlobalSection
+EndGlobal
