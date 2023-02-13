@@ -1,0 +1,2 @@
+# Lec_Console
+ООП
